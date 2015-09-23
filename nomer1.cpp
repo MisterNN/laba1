@@ -26,9 +26,15 @@ double sinus(double x,double epsilon)
 	   r++;}
    cout.precision(r+1);
 return summa;}
-int main(){
-   double x,epsilon;
-   cin >> x >> epsilon;
-   cout << sinus(x,epsilon) << endl;
-   return 0;
+void assert(double x, double epsilon) 
+{
+	if (fabs(sin(x) - sinus( x, epsilon)) <= epsilon)
+		puts("OK");
+	else
+		printf("FAIL: %.9lf\m", epsilon);
+}
+
+int main() {
+	assert(0,0.000011);
+	assert(1.57, 0.000011);
 }
