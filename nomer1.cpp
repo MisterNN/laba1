@@ -37,4 +37,6 @@ void assert(double x, double epsilon)
 int main() {
 	assert(0,0.000011);
 	assert(1.57, 0.000011);
+        assert(3.14,0.000011);
+	assert(6.28, 0.000011);
 }
