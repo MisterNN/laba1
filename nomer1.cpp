@@ -31,7 +31,7 @@ void assert(double x, double epsilon)
 	if (fabs(sin(x) - sinus( x, epsilon)) <= epsilon)
 		puts("OK");
 	else
-		printf("FAIL: %.9lf\m", epsilon);
+		printf("FAIL: %.9lf\n", epsilon);
 }
 
 int main() {
